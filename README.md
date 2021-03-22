@@ -1,4 +1,4 @@
-owert is a Go Ray Tracer created with the help of Peter Shirley's book, "Ray Tracing in One Weekend".
+Owert is a Go Ray Tracer created with the help of Peter Shirley's book, "Ray Tracing in One Weekend".
 
 To try it out:
 
