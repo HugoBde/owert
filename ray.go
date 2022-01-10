@@ -4,11 +4,10 @@ import (
 	"math"
 )
 
-
 type Ray struct {
-	origin    	Point3
-	direction 	Vec3
-	depth		uint
+	origin    Point3
+	direction Vec3
+	depth     uint
 }
 
 //Always create rays using this function to ensure that the direction vector is always a unit vector in order to avoid having to normalize every ray.direction that will be used later on in the program
@@ -35,12 +34,6 @@ func (r Ray) GetColor() (ret ColorRGB) {
 			ret = hit.color
 		}
 	}
-	
-	
-
-	
-
 
 	return
 }
-

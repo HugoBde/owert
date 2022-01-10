@@ -8,9 +8,9 @@ type Matrix struct {
 }
 
 func NewMatrix(n uint) Matrix {
-	data := make([]int, n * n)
-	for i,_ := range data {
+	data := make([]int, n*n)
+	for i, _ := range data {
 		data[i] = 0
 	}
-	return Matrix {n, data}
+	return Matrix{n, data}
 }

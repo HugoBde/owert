@@ -3,9 +3,9 @@ package main
 import ()
 
 type HitRecord struct {
-	hit			bool
+	hit         bool
 	hitDistance float64
-	color		ColorRGB
+	color       ColorRGB
 }
 
 type Hittable interface {

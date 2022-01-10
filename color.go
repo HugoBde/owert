@@ -1,14 +1,13 @@
 package main
 
-import (
-)
+import ()
 
 type ColorRGB struct {
-	r,g,b uint8
+	r, g, b uint8
 }
 
 func backgroundColor() ColorRGB {
-	return ColorRGB{255,255,255}
+	return ColorRGB{255, 255, 255}
 }
 
 func (c ColorRGB) Scale(f float64) (ret ColorRGB) {
@@ -18,12 +17,12 @@ func (c ColorRGB) Scale(f float64) (ret ColorRGB) {
 	return
 }
 
-func (c ColorRGB) RGBA() (r, g, b, a uint32){
+func (c ColorRGB) RGBA() (r, g, b, a uint32) {
 	r = uint32(c.r)
 	r |= r << 8
 	r *= uint32(255)
 	r /= 0xff
-	
+
 	g = uint32(c.g)
 	g |= g << 8
 	g *= uint32(255)

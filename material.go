@@ -3,6 +3,6 @@ package main
 import ()
 
 type Material struct {
-	color ColorRGB
+	color      ColorRGB
 	reflective bool
 }
